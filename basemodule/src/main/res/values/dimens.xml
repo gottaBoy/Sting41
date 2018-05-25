@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="common_dimens_15dp">15dp</dimen>
+    <dimen name="common_dimens_60dp">60dp</dimen>
+    <dimen name="common_dimens_50dp">50dp</dimen>
+    <dimen name="common_dimens_20dp">20dp</dimen>
+    <dimen name="common_dimens_40dp">40dp</dimen>
+    <dimen name="common_dimens_48dp">48dp</dimen>
+    <dimen name="common_dimens_32dp">32dp</dimen>
+    <dimen name="common_dimens_1dp">1dp</dimen>
+    <dimen name="common_dimens_5dp">5dp</dimen>
+    <dimen name="common_dimens_2dp">2dp</dimen>
+    <dimen name="common_dimens_25dp">25dp</dimen>
+    <dimen name="common_dimens_30dp">30dp</dimen>
+    <dimen name="common_dimens_10dp">10dp</dimen>
+    <dimen name="common_dimens_0dp">0dp</dimen>
+    <dimen name="common_dimens_90dp">90dp</dimen>
+    <dimen name="common_dimens_80dp">80dp</dimen>
+    <dimen name="common_dimens_70dp">70dp</dimen>
+    <dimen name="common_dimens_17dp">17dp</dimen>
+    <dimen name="common_dimens_100dp">100dp</dimen>
+    <dimen name="common_dimens_6dp">6dp</dimen>
+
+
+    <dimen name="common_dimens_text_size_one">18sp</dimen>
+    <dimen name="common_dimens_text_size_two">16sp</dimen>
+    <dimen name="common_dimens_text_size_three">14sp</dimen>
+    <dimen name="common_dimens_text_size_four">12sp</dimen>
+
+</resources>

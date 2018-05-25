@@ -1,0 +1,70 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile rootProject.ext.dependencies.supportV7
+    testCompile 'junit:junit:4.12'
+
+    //retrofit
+//    compile rootProject.ext.dependencies.retrofitVersion
+//    compile rootProject.ext.dependencies.convertergson
+//    compile rootProject.ext.dependencies.rxjavaadapter
+    compile rootProject.ext.dependencies.okhttp
+    compile rootProject.ext.dependencies.gson
+
+    compile rootProject.ext.dependencies.butterknife
+    compile rootProject.ext.dependencies.eventbus
+
+    compile rootProject.ext.dependencies.bottomnavigationbar
+    compile rootProject.ext.dependencies.circleimageview
+
+    compile rootProject.ext.dependencies.smartrefreshlayout
+    compile rootProject.ext.dependencies.smartrefreshheader
+
+    compile rootProject.ext.dependencies.okhttputils
+    compile rootProject.ext.dependencies.androidpickerview
+
+    compile rootProject.ext.dependencies.fastjson
+    compile rootProject.ext.dependencies.easyrecyclerview
+
+    compile rootProject.ext.dependencies.baserecyclerviewadapterhelper
+
+    //compile 'com.jude:easyrecyclerview:4.4.2'
+
+//    compile 'com.github.mzule.activityrouter:activityrouter:1.2.2'
+//    apt 'com.github.mzule.activityrouter:compiler:1.1.7'
+
+//    compile 'com.zhy:okhttputils:2.6.2'
+//    compile 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
+//    compile 'com.contrarywind:Android-PickerView:3.2.6'
+
+    // compile 'de.hdodenhof:circleimageview:2.2.0'
+    //rxJava
+//    compile rootProject.ext.dependencies.rxandroid
+//    compile rootProject.ext.dependencies.rxjava
+
+    //rootProject.ext.dependencies
+    //这个commonmodule主要是为了进行一些通用的库：比如下拉刷新 第三方SDK 第三方图片加载库，第三方网络库等等
+}

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">货先生发货</string>
+    <string name="longin_phonenum">输入的手机号不正确</string>
+</resources>
